@@ -1,0 +1,35 @@
+{
+  "theme_color": "#f69435",
+  "background_color": "#f69435",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": ".",
+  "start_url": ".",
+  "id": ".",
+  "short_name": "Bitlearn - Dashboard",
+  "name": "Bitlearn - Dashboard",
+  "description": "",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
