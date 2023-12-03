@@ -1,10 +1,10 @@
-import ComingSoon from "pages/global/ComingSoon";
+import CommingSoon from "components/commingSoon/CommingSoon";
 import React from "react";
 
 function SuperAdminDashboard() {
   return (
     <div>
-      <ComingSoon title="Super Admin Dashboard" />
+      <CommingSoon title="Super Admin Dashboard" />
     </div>
   );
 }
