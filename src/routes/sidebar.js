@@ -225,19 +225,19 @@ const sidebar = [
         path: "/menu2",
         name: "Menu 2",
       },
-      {
-        name: "Menu 3",
-        routes: [
-          {
-            path: "/submenua",
-            name: "Sub Menu A",
-          },
-          {
-            path: "/submenub",
-            name: "Sub Menu B",
-          },
-        ],
-      },
+      // {
+      //   name: "Menu 3",
+      //   routes: [
+      //     {
+      //       path: "/submenua",
+      //       name: "Sub Menu A",
+      //     },
+      //     {
+      //       path: "/submenub",
+      //       name: "Sub Menu B",
+      //     },
+      //   ],
+      // },
     ],
   },
   // {
