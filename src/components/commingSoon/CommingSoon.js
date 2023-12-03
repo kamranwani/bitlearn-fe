@@ -6,11 +6,15 @@ function CommingSoon(props) {
   return (
     <div className="lg:grid lg:grid-cols-2 lg:h-full sm:block">
       <div className={`col-span-1 flex flex-col justify-between sm:block`}>
-        <div className="my-5 mx-2 items-center flex">
-          <img src={logoLight} className="w-20 h-20" alt="Bitlearn" />
+        <div className="my-5 mx-2 lg:items-center lg:flex md:flex sm:block">
+          <img
+            src={logoLight}
+            className="lg:w-20 lg:h-20 md:w-14 md:h-14 sm:w-6 sm:h-6 "
+            alt="Bitlearn"
+          />
           <h2 className="ml-auto text-white text-2xl font-bold">{title}</h2>
         </div>
-        <div className="">
+        <div className="mt-20">
           <h2 className="text-white text-4xl font-bold mb-5">Comming Soon!</h2>
           <p className="text-white text-sm mb-2">
             Subscribe to enter the waitlist
