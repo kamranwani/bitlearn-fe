@@ -7,6 +7,7 @@ import {
   IoRemoveSharp,
 } from "react-icons/io5";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { FaChevronRight } from "react-icons/fa";
 
 const SidebarSubMenu = ({ route }) => {
   const { t } = useTranslation();
@@ -28,10 +29,10 @@ const SidebarSubMenu = ({ route }) => {
           onClick={handleSubMenu}
           aria-haspopup="true"
         >
-          <span className="inline-flex items-center">
-            <route.icon className="w-5 h-5" aria-hidden="true" />
-            <span className="ml-4 mt-1">{t(`${route.name}`)}</span>
-            <span className="pl-4 mt-1">
+          <span className="flex justify-between w-full items-center ">
+            {/* <route.icon className="w-5 h-5" aria-hidden="true" /> */}
+            <span className="">{t(`${route.name}`)}</span>
+            <span className="">
               {open ? <IoChevronDownOutline /> : <IoChevronForwardOutline />}
             </span>
           </span>
@@ -39,7 +40,7 @@ const SidebarSubMenu = ({ route }) => {
         </button>
         {open && (
           <ul
-            className="p-2  overflow-hidden text-sm font-medium text-gray-500 rounded-md dark:text-gray-400 dark:bg-gray-900"
+            className="p-2  overflow-hidden text-sm font-medium text-gray-500 rounded-md dark:text-gray-400 dark:bg-transparent"
             aria-label="submenu"
           >
             {route.routes.map((child, i) => (
@@ -57,13 +58,13 @@ const SidebarSubMenu = ({ route }) => {
                     ></span>
                   </Route>
 
-                  <span className="text-xs text-gray-500 pr-1 hover:text-white mr-1">
-                    {/* <IoRemoveSharp /> */}
-                    {child.icon}
-                  </span>
-                  <span className="text-gray-500 hover:text-green-600 dark:hover:text-gray-200">
-                    {t(`${child.name}`)}
-                  </span>
+                  <div className="text-gray-500 hover:text-green-600 dark:hover:text-gray-200 flex items-center justify-between my-2 w-full">
+                    <div className="mr-2 flex items-center">
+                      {child.icon}
+                      <span className="ml-3">{t(`${child.name}`)}</span>
+                    </div>
+                    <FaChevronRight />
+                  </div>
                 </NavLink>
               </li>
             ))}

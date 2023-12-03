@@ -1,7 +1,12 @@
+import CommingSoon from "components/commingSoon/CommingSoon";
 import React from "react";
 
 function ElearningDashboard() {
-  return <div>ElearningDashboard</div>;
+  return (
+    <div>
+      <CommingSoon title="Elearning Dashboard" />
+    </div>
+  );
 }
 
 export default ElearningDashboard;
