@@ -4,8 +4,8 @@ import commingSoonImg from "./../../assets/img/comming soon/CommingSoon.jpg";
 function CommingSoon(props) {
   const { title } = props;
   return (
-    <div className="grid grid-cols-2 h-full">
-      <div className={`col-span-1 flex flex-col justify-between`}>
+    <div className="lg:grid lg:grid-cols-2 lg:h-full sm:block">
+      <div className={`col-span-1 flex flex-col justify-between sm:block`}>
         <div className="my-5 mx-2 items-center flex">
           <img src={logoLight} className="w-20 h-20" alt="Bitlearn" />
           <h2 className="ml-auto text-white text-2xl font-bold">{title}</h2>
@@ -15,14 +15,14 @@ function CommingSoon(props) {
           <p className="text-white text-sm mb-2">
             Subscribe to enter the waitlist
           </p>
-          <div className="flex p-0 m-0 mb-4 w-2/3 bg-transparent rounded-lg justify-between">
+          <div className="flex p-0 m-0 mb-4 md:w-2/3 bg-transparent rounded-lg justify-between sm:w-2/3">
             <input
               type="email"
               className="bg-white w-full p-2 rounded-l-lg outline-none"
             />
             <button
               type="button"
-              className="bg-blue-700 p-2 rounded-r-lg cursor-pointer text-sm text-white w-1/3"
+              className="bg-blue-700 p-2 rounded-r-lg cursor-pointer md:text-sm text-white md:w-40 sm:text-xs sm:w-30"
             >
               Subscribe
             </button>

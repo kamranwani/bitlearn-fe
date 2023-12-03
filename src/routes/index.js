@@ -17,6 +17,8 @@ const ChildAttributes = lazy(() =>
 );
 const Menu1 = lazy(() => import("pages/superAdmin/Menu1"));
 const Menu2 = lazy(() => import("pages/superAdmin/Menu2"));
+const SubMenuA = lazy(() => import("pages/superAdmin/Menu3/SubMenuA"));
+const SubMenuB = lazy(() => import("pages/superAdmin/Menu3/SubMenuB"));
 const Products = lazy(() => import("../pages/eCommerce/Products"));
 const ProductDetails = lazy(() => import("../pages/eCommerce/ProductDetails"));
 const Category = lazy(() => import("../pages/eCommerce/Category"));
@@ -139,6 +141,14 @@ const routes = [
   {
     path: "/menu2",
     component: Menu2,
+  },
+  {
+    path: "/submenua",
+    component: SubMenuA,
+  },
+  {
+    path: "/submenub",
+    component: SubMenuB,
   },
 ];
 
